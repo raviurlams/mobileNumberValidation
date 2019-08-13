@@ -1,0 +1,22 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<h2>Phone Number: </h2>
+<div>
+  <form [formGroup]="profileForm">
+
+    <div>
+      US Phone Number:
+      <input type="text" formControlName="usPhone" [textMask]="{mask: usPhoneNomask}">
+    </div>
+
+    <div>
+      Canada Phone Number:
+      <input type="text" formControlName="canadaPhone" [textMask]="{mask: canPhoneNomask}">
+    </div>
+
+    <div>
+      Germany Phone Number:
+      <input type="text" formControlName="germanyPhone" [textMask]="{mask: gerPhoneNomask}">
+    </div>
+
+  </form>
+</div>
